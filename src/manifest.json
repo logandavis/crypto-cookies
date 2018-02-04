@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2, // for Chrome 18
+
+  "name": "crypto-cookies",
+  "description": "A Chrome extension that replaces cryptocurrencies with Girl Scout cookies.",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["crypto-cookies.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
