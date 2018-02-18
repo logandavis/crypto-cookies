@@ -7,7 +7,10 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["crypto-cookies.js"],
+      "js": [
+        "coinReplacers.js",
+        "cryptoCookies.js"
+      ],
       "run_at": "document_end"
     }
   ]
